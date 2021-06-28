@@ -1,0 +1,34 @@
+.flex {
+  display: flex;
+}
+.align-item-center {
+  align-items: center;
+}
+.row {
+  display: flex;
+  margin: 0 -12px;
+}
+.col {
+  margin: 0 12px;
+}
+.col-100 {
+  width: 100%;
+}
+.col-50 {
+  width: calc(50% - 24px);
+}
+.col-30 {
+  width: calc(100% / 3 - 24px);
+}
+.tt-uppercase {
+  text-transform: uppercase;
+}
+.font-s-10 {
+  font-size: 10px;
+}
+.m-left-16 {
+  margin-left: 16px;
+}
+.white-space-nowrap {
+  white-space: nowrap;
+}

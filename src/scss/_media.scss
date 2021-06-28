@@ -1,0 +1,60 @@
+@media (max-width: 1240px) {
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .header {
+    & input {
+      margin: 18px 0;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .h1 {
+    @include font-size(30);
+    @include line-height(45px);
+    font-weight: map-get($font-weights, bold);
+    text-transform: uppercase;
+  }
+  .h2 {
+    @include font-size(18);
+    @include line-height(27px);
+    font-weight: map-get($font-weights, bold);
+    text-transform: uppercase;
+  }
+  .container {
+    max-width: 414px;
+  }
+  .content {
+    padding: 0 20px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    & p {
+      font-size: 11px;
+    }
+
+    & nav {
+      margin-top: 18px;
+    }
+    & ul {
+      flex-direction: column;
+    }
+    & li {
+      font-size: 11px;
+    }
+  }
+  .form-find {
+    width: calc(100% - 40px);
+    & input {
+      width: 100%;
+    }
+  }
+  .form-description {
+    & input {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+body {
+  font-family: "Roboto", sans-serif;
+  @include font-size(18);
+  @include line-height(1.5);
+  color: $dark-gray;
+  background-color: $black;
+}
+.h1 {
+  @include font-size(60);
+  @include line-height(90px);
+  font-weight: map-get($font-weights, bold);
+  text-transform: uppercase;
+}
+.h2 {
+  @include font-size(38);
+  @include line-height(57px);
+  font-weight: map-get($font-weights, bold);
+  text-transform: uppercase;
+}
+.container {
+  position: relative;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  box-shadow: 0 0 0 1px blue;
+}
+.header {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  top: 25px;
+  align-items: center;
+  justify-content: space-between;
+  & nav {
+    flex-grow: 1;
+    margin: 0 -12px;
+  }
+  & ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 79px;
+  }
+  & li {
+    font-size: 10px;
+    list-style: none;
+    margin: 0 12px;
+  }
+  & p {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  & img {
+    @include object-size(24, 24);
+  }
+}
+.logo {
+  margin-right: 79px;
+}
+.form-find {
+  & input {
+    @include object-size(248, 25);
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 13.3px;
+    background-color: $dark;
+    border: none;
+    float: right;
+  }
+}
+.description-image {
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+.description {
+  text-align: center;
+  padding: 200px 0;
+  & p {
+    font-size: 16px;
+  }
+}
+.form-description {
+  max-width: 570px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & input {
+    min-width: 270px;
+    min-height: 50px;
+    font-size: 14px;
+    margin-top: 1.5rem;
+    color: white;
+    padding-left: 20px;
+    border: 2px solid $dark-gray;
+    border-radius: 3px;
+    background: transparent;
+    box-sizing: border-box;
+  }
+  & button {
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px 30px;
+    background: $green;
+    border: none;
+    margin-top: 1.5rem;
+  }
+}

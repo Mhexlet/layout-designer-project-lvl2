@@ -1,0 +1,10 @@
+@mixin font-face($font-family, $file-name, $font-path: '../../fonts/') {
+  @font-face {
+      font-family: $font-family;
+      src: url('#{$font-path}#{$file-name}');
+  }
+}
+
+@each $font-family, $file-name in $main-font {
+  @include font-face($font-family, $file-name);
+}

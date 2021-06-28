@@ -1,0 +1,17 @@
+@mixin font-size($size) {
+  font-size: #{$size}px;
+}
+@mixin line-height($value) {
+  line-height: #{$value};
+}
+@mixin top($value) {
+  top: #{$value}px;
+}
+@mixin object-size($width, $height) {
+  width: #{$width}px;
+  height: #{$height}px;
+}
+@mixin margin-left-right($left, $right) {
+  margin-left: #{$left}px;
+  margin-right: #{$right}px;
+}
