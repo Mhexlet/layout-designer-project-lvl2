@@ -17,6 +17,12 @@ body {
   font-weight: map-get($font-weights, bold);
   text-transform: uppercase;
 }
+.h3 {
+  @include font-size(24);
+  @include line-height(36px);
+  font-weight: map-get($font-weights, normal);
+  text-transform: uppercase;
+}
 .container {
   position: relative;
   max-width: 1200px;
@@ -99,11 +105,13 @@ body {
     box-sizing: border-box;
   }
   & button {
-    width: 100%;
-    border-radius: 5px;
-    padding: 20px 30px;
     background: $green;
-    border: none;
-    margin-top: 1.5rem;
   }
+}
+.btn {
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px 30px;
+  border: none;
+  margin-top: 1.5rem;
 }

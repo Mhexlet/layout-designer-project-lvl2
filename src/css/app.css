@@ -86,6 +86,13 @@ body {
   text-transform: uppercase;
 }
 
+.h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .container {
   position: relative;
   max-width: 1200px;
@@ -203,12 +210,109 @@ body {
 }
 
 .form-description button {
+  background: #34C176;
+}
+
+.btn {
   width: 100%;
   border-radius: 5px;
   padding: 20px 30px;
-  background: #34C176;
   border: none;
   margin-top: 1.5rem;
+}
+
+.page-pricing {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.page-pricing h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.pricing-item {
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 374px;
+  -webkit-box-shadow: 0 0 0 1px green;
+          box-shadow: 0 0 0 1px green;
+}
+
+.pricing-item h3 {
+  padding-bottom: 200px;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.pricing-item button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.flex-pricing-items {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pricing-value {
+  font-size: 64px;
+  line-height: 100%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.pricing-value span {
+  font-size: 32px;
+  vertical-align: super;
+}
+
+.pricing-footer {
+  font-size: 12.8px;
+  text-align: center;
+  padding: 64px 0;
+}
+
+.text-pricing-items {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.subscribe-1 {
+  background-image: url(../images/subscribe_1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.subscribe-2 {
+  background-image: url(../images/subscribe_2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.subscribe-3 {
+  background-image: url(../images/subscribe_3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  .pricing-item {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .h2 {
+    padding-top: 100px;
+  }
+  .col {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -238,6 +342,8 @@ body {
   }
   .content {
     padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .header {
     -webkit-box-orient: vertical;
