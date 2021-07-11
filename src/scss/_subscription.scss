@@ -13,6 +13,7 @@
   border-radius: 1rem;
   box-sizing: border-box;
   min-width: 374px;
+  margin-bottom: 24px;
   box-shadow: 0 0 0 1px green;
   & h3 {
     padding-bottom: 200px;
@@ -27,6 +28,7 @@
 }
 .flex-pricing-items {
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .pricing-value {
   font-size: 64px;
@@ -66,7 +68,6 @@
 @media (max-width: 576px) {
   .pricing-item {
     width: 100%;
-    margin-bottom: 24px;
   }
   .h2 {
     padding-top: 100px;

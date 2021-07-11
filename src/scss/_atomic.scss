@@ -11,6 +11,16 @@
 .col {
   margin: 0 12px;
 }
+.row-news {
+  display: flex;
+  margin: 0 -25px;
+}
+.col-news {
+  margin: 0 25px;
+}
+.col-50-news {
+  width: calc(50% - 50px);
+}
 .col-100 {
   width: 100%;
 }
@@ -28,6 +38,12 @@
 }
 .m-left-16 {
   margin-left: 16px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mb-30 {
+  margin-bottom: 30px;
 }
 .white-space-nowrap {
   white-space: nowrap;
