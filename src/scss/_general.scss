@@ -16,10 +16,17 @@ body {
   @include line-height(57px);
   font-weight: map-get($font-weights, bold);
   text-transform: uppercase;
+  text-align: center;
 }
 .h3 {
   @include font-size(24);
   @include line-height(36px);
+  font-weight: map-get($font-weights, normal);
+  text-transform: uppercase;
+}
+.h3-news {
+  @include font-size(30);
+  @include line-height(45px);
   font-weight: map-get($font-weights, normal);
   text-transform: uppercase;
 }
@@ -28,7 +35,7 @@ body {
   max-width: 1200px;
 
   margin: 0 auto;
-  box-shadow: 0 0 0 1px blue;
+  box-shadow: 0 0 0 1px rgb(76, 0, 255);
 }
 .header {
   position: absolute;
@@ -114,4 +121,14 @@ body {
   padding: 20px 30px;
   border: none;
   margin-top: 1.5rem;
+}
+.btn-app {
+  display: inline-block;
+  background-color: $red;
+  padding: 17px 40px 17px 40px;
+  margin-top: 16px;
+  border-radius: 32px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
 }

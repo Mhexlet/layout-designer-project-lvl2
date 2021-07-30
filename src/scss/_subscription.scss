@@ -1,5 +1,4 @@
 .page-pricing {
-  width: 100%;
   padding-top: 100px;
   padding-bottom: 50px;
 
@@ -9,12 +8,12 @@
   }
 }
 .pricing-item {
+  display: inline-block;
   padding: 0 1.5rem;
   border-radius: 1rem;
   box-sizing: border-box;
-  min-width: 374px;
+  flex-basis: 374px;
   margin-bottom: 24px;
-  box-shadow: 0 0 0 1px green;
   & h3 {
     padding-bottom: 200px;
     padding-top: 24px;

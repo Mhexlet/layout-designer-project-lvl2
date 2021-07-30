@@ -3,6 +3,17 @@
   margin-bottom: 100px;
   text-align: center;
 }
-.news-body {
-  text-align: left;
+.news-autor p {
+  display: inline;
+}
+.news-btn {
+  display: inline-block;
+  border: 1px solid $dark-gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 16px 30px 16px 30px;
+  margin-top: 48px;
+  text-decoration: none;
+}
+.news-item {
 }

@@ -25,9 +25,7 @@
   }
   .container {
     max-width: 414px;
-  }
-  .content {
-    padding: 0 20px;
+    // padding: 0 20px;
     box-sizing: border-box;
   }
   .header {
@@ -56,6 +54,15 @@
   .form-description {
     & input {
       width: 100%;
+    }
+  }
+  .news-item {
+    flex-wrap: wrap;
+    .width-100 {
+      width: 100%;
+    }
+    .h3 {
+      margin-top: 50px;
     }
   }
 }
