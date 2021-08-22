@@ -1,0 +1,18 @@
+.text-align-center {
+  text-align: center;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.row {
+  display: flex;
+  margin: 0 -12px;
+  // box-shadow: 0 0 0 1px blue;
+}
+.col {
+  margin: 0 12px;
+}
+.col-50 {
+  width: calc(50% - 24px);
+  // box-shadow: 0 0 0 1px green;
+}
