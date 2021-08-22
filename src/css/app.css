@@ -21,6 +21,10 @@
   width: calc(50% - 24px);
 }
 
+.col-30 {
+  width: calc(33.333% - 24px);
+}
+
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Regular.ttf);
@@ -133,6 +137,12 @@ body {
 
 .btn {
   display: block;
+  padding: 20px 30px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .header {
@@ -337,12 +347,81 @@ body {
   font-size: 13.3px;
 }
 
-.btn {
-  display: block;
-  padding: 20px 30px;
-  border-radius: 5px;
+#page-pricing {
+  padding-top: 100px;
+}
+
+.pricing {
+  margin-top: 29px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 0 1px green;
+          box-shadow: 0 0 0 1px green;
+}
+
+.pricing-card {
+  min-width: 374px;
+  border-radius: 1rem;
+  color: #fff;
   text-align: center;
-  text-decoration: none;
+  padding: 24px 24px 0 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  -webkit-box-shadow: 0 0 0 1px yellow;
+          box-shadow: 0 0 0 1px yellow;
+}
+
+.pricing-card__title {
   text-transform: uppercase;
-  color: #ffffff;
+  font-size: 24px;
+}
+
+.pricing-card__price {
+  font-size: 64px;
+  line-height: 64px;
+  margin-top: 200px;
+}
+
+.pricing-card__price sup {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-left: 16px;
+}
+
+.pricing-card__btn {
+  margin-top: 40px;
+  border: 1px solid white;
+}
+
+.pricing-card__text {
+  font-size: 12.8px;
+  margin: 64px 0;
+}
+
+.bg-free {
+  background-image: url(../images/subscribe_1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url(../images/subscribe_2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url(../images/subscribe_3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.page-pricing__text {
+  font-size: 16px;
+  margin-top: 24px;
 }

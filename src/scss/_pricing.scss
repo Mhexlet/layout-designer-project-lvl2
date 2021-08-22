@@ -1,0 +1,61 @@
+#page-pricing {
+  padding-top: 100px;
+}
+.pricing {
+  margin-top: 29px;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 0 0 1px green;
+}
+.pricing-card {
+  min-width: 374px;
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+  padding: 24px 24px 0 24px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 0 1px yellow;
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  &__price {
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: 200px;
+    sup {
+      text-transform: uppercase;
+      font-size: 32px;
+      margin-left: 16px;
+    }
+  }
+  &__btn {
+    margin-top: 40px;
+    border: 1px solid white;
+  }
+  &__text {
+    font-size: 12.8px;
+    margin: 64px 0;
+  }
+}
+.bg-free {
+  background-image: url(../images/subscribe_1.png);
+  background-position: center;
+  background-size: cover;
+}
+.bg-standart {
+  background-image: url(../images/subscribe_2.png);
+  background-position: center;
+  background-size: cover;
+}
+.bg-premium {
+  background-image: url(../images/subscribe_3.png);
+  background-position: center;
+  background-size: cover;
+}
+.page-pricing__text {
+  font-size: 16px;
+  margin-top: 24px;
+}
