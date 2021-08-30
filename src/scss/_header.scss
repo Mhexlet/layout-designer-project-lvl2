@@ -133,8 +133,11 @@
     }
   }
   &__btn {
+    text-align: center;
+    padding: 20px 30px;
     width: 100%;
     background-color: $green;
     font-size: 13.3px;
+    text-transform: uppercase;
   }
 }

@@ -1,0 +1,28 @@
+.mobile {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+  &__column {
+    flex: 1 0 50%;
+  }
+  &__text {
+    text-align: left;
+    font-size: 16px;
+  }
+  &__img {
+    margin: 0 auto;
+    width: 333px;
+    height: 278px;
+  }
+  &__btn {
+    margin-top: 15px;
+    border-radius: 32px;
+    padding: 16px 40px;
+    font-size: 12.8px;
+    background-color: $red;
+  }
+}

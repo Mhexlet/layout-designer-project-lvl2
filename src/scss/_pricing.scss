@@ -1,11 +1,8 @@
-#page-pricing {
-  padding-top: 100px;
-}
 .pricing {
   margin-top: 29px;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 0 0 0 1px green;
+  // box-shadow: 0 0 0 1px green;
 }
 .pricing-card {
   min-width: 374px;
@@ -16,7 +13,7 @@
   box-sizing: border-box;
   margin-top: 16px;
   margin-bottom: 16px;
-  box-shadow: 0 0 0 1px yellow;
+  // box-shadow: 0 0 0 1px yellow;
   &__title {
     text-transform: uppercase;
     font-size: 24px;
@@ -32,6 +29,10 @@
     }
   }
   &__btn {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 21px 0;
     margin-top: 40px;
     border: 1px solid white;
   }

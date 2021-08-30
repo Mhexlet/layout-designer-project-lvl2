@@ -4,10 +4,21 @@
 .fs-16 {
   font-size: 16px;
 }
+.mt-65 {
+  margin-top: 65px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
 .row {
   display: flex;
   margin: 0 -12px;
   // box-shadow: 0 0 0 1px blue;
+}
+.row-news {
+  display: flex;
+  margin-left: -25px;
+  margin-right: -25px;
 }
 .col {
   margin: 0 12px;
@@ -16,6 +27,22 @@
   width: calc(50% - 24px);
   // box-shadow: 0 0 0 1px green;
 }
+.col-50-news {
+  width: calc(50% - 50px);
+  margin: 0 25px;
+  box-shadow: 0 0 0 1px green;
+  @media (max-width: 576px) {
+    width: calc(100% - 50px);
+  }
+}
 .col-30 {
   width: calc(33.333% - 24px);
+}
+@media (max-width: 576px) {
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
 }

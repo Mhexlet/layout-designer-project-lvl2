@@ -6,11 +6,27 @@
   font-size: 16px;
 }
 
+.mt-65 {
+  margin-top: 65px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 -12px;
+}
+
+.row-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -25px;
+  margin-right: -25px;
 }
 
 .col {
@@ -21,8 +37,34 @@
   width: calc(50% - 24px);
 }
 
+.col-50-news {
+  width: calc(50% - 50px);
+  margin: 0 25px;
+  -webkit-box-shadow: 0 0 0 1px green;
+          box-shadow: 0 0 0 1px green;
+}
+
+@media (max-width: 576px) {
+  .col-50-news {
+    width: calc(100% - 50px);
+  }
+}
+
 .col-30 {
   width: calc(33.333% - 24px);
+}
+
+@media (max-width: 576px) {
+  .order-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .order-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 @font-face {
@@ -63,6 +105,12 @@ body {
   background-color: #08020d;
 }
 
+.new-section {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 100px;
+}
+
 .h1 {
   font-size: 60px;
   line-height: 90px;
@@ -96,6 +144,8 @@ body {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 0 2px #1ace98;
+          box-shadow: 0 0 0 2px #1ace98;
 }
 
 .container__mobile {
@@ -136,12 +186,9 @@ body {
 }
 
 .btn {
-  display: block;
-  padding: 20px 30px;
+  display: inline-block;
   border-radius: 5px;
-  text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -342,13 +389,12 @@ body {
 }
 
 .form-feedback__btn {
+  text-align: center;
+  padding: 20px 30px;
   width: 100%;
   background-color: #34c176;
   font-size: 13.3px;
-}
-
-#page-pricing {
-  padding-top: 100px;
+  text-transform: uppercase;
 }
 
 .pricing {
@@ -358,8 +404,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0 0 0 1px green;
-          box-shadow: 0 0 0 1px green;
 }
 
 .pricing-card {
@@ -372,8 +416,6 @@ body {
           box-sizing: border-box;
   margin-top: 16px;
   margin-bottom: 16px;
-  -webkit-box-shadow: 0 0 0 1px yellow;
-          box-shadow: 0 0 0 1px yellow;
 }
 
 .pricing-card__title {
@@ -394,6 +436,10 @@ body {
 }
 
 .pricing-card__btn {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 21px 0;
   margin-top: 40px;
   border: 1px solid white;
 }
@@ -424,4 +470,123 @@ body {
 .page-pricing__text {
   font-size: 16px;
   margin-top: 24px;
+}
+
+.news {
+  margin-top: 48px;
+}
+
+.news-item {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-shadow: 0 0 0 1px yellow;
+          box-shadow: 0 0 0 1px yellow;
+}
+
+@media (max-width: 576px) {
+  .news-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.news-body {
+  text-align: left;
+}
+
+.news-body__title {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: normal;
+}
+
+@media (max-width: 576px) {
+  .news-body__title {
+    margin-top: 50px;
+  }
+}
+
+.news-body__text {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #cacaca;
+}
+
+.news-body__btn {
+  padding: 16px 31px;
+  margin-top: 48px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+
+.news-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+  font-size: 12px;
+}
+
+.news-about__img {
+  width: 19px;
+  height: 19px;
+}
+
+.news-about__text {
+  color: #f89202;
+  text-transform: uppercase;
+  margin: 0 16px;
+}
+
+.news-about__date {
+  color: #cacaca;
+}
+
+.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 48px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.mobile__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.mobile__text {
+  text-align: left;
+  font-size: 16px;
+}
+
+.mobile__img {
+  margin: 0 auto;
+  width: 333px;
+  height: 278px;
+}
+
+.mobile__btn {
+  margin-top: 15px;
+  border-radius: 32px;
+  padding: 16px 40px;
+  font-size: 12.8px;
+  background-color: #95390c;
 }
