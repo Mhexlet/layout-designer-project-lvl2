@@ -5,7 +5,7 @@
 .news-item {
   flex-wrap: wrap;
   align-items: flex-start;
-  box-shadow: 0 0 0 1px yellow;
+  // box-shadow: 0 0 0 1px yellow;
   @media (max-width: 576px) {
     flex-direction: column;
   }
